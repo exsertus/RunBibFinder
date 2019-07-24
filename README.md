@@ -7,7 +7,7 @@ AWS Transfer for SFTP simply used to front-end S3 to make it more user friendly.
 Event fires when images are uploaded into inbox (for each image uploaded). Each image analysed and where there is a numeric bib detected, the image is copied into the matched folder with the bib number. Multiple bibs detected in one image will result in multiple matched files - same image, but named with each numeric bib number
 
 # Bootstrapping
-1. Git clone the repo
+1. Git clone the repo `git clone https://github.com/exsertus/RunBibFinder.git`
 2. Ensure you have an AWS account and an IAM user with access key/secret key, ideally setup as a profile called "default" on the device you run Terraform from. The IAM user needs to be privilaged to create/update/destroy the components in the script (R35, IAM, S3, Lambda, Rekognition, AWS Transfer for SFTP). Essentially "admin" access.
 3. Download Terraform for applicable OS
 4. Run `terraform init`, then `terraform plan`, then `terraform apply`
