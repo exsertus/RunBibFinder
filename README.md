@@ -13,4 +13,3 @@ Event fires when images are uploaded into inbox (for each image uploaded). Each 
 4. Run `terraform init`, then `terraform plan`, then `terraform apply`
 5. Script will prompt for domain name (primary), this will need to be a domain managed by r53. THis step can be removed for demo purposes and the "raw" AWS Transfer for SFTP endpoint can be used, if need be.
 6. To fine tune the sftp access add in additional public keys to the `user` user in AWS Transfer for SFTP. Eg if you run the Terraform from a different device to sftp client.
-
